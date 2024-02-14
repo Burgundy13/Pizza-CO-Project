@@ -1,2 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: cadetblue; }
+  color: #232323;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  overflow: hidden; }
+
+img {
+  display: block;
+  width: 100%; }
+
+p {
+  color: #8a8a8a; }
+
+ul {
+  list-style: none; }
+
+.header {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), #fff);
+  display: grid;
+  grid-template-columns: 7.5rem max-content;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .header__brand {
+    display: block; }
