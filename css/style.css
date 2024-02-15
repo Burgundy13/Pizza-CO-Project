@@ -162,28 +162,11 @@ ul {
   background-size: cover;
   display: grid;
   grid-gap: 2rem;
-  grid-template-areas: '. title title .' '. content-left content-right .' 'figures figures figures figures';
+  grid-template-areas: '. title title .' '. content-left content-right .' 'figures figures figures figures';
   grid-template-columns: 25rem repeat(2, minmax(0, 1fr)) 25rem;
   grid-template-rows: 20rem 1fr 20rem;
   margin-top: 2rem;
   width: 100%; }
-  .about__heading {
-    align-self: center;
-    color: #232323;
-    font-size: 6rem;
-    font-weight: 300;
-    grid-area: title;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase; }
-    .about__heading__back, .about__heading__front {
-      display: block; }
-    .about__heading__back {
-      font-family: 'Playfair Display', sans-serif;
-      font-weight: bold;
-      line-height: 4rem;
-      opacity: 0.2;
-      text-transform: capitalize; }
   .about__content-left {
     font-size: 2.6rem;
     grid-area: content-left;
@@ -206,3 +189,56 @@ ul {
     font-size: 2rem;
     margin-top: 2rem;
     text-transform: uppercase; }
+
+.section__heading {
+  align-self: center;
+  color: #232323;
+  font-size: 6rem;
+  font-weight: 300;
+  grid-area: title;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase; }
+  .section__heading__back, .section__heading__front {
+    display: block; }
+  .section__heading__back {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    line-height: 4rem;
+    opacity: 0.2;
+    text-transform: capitalize; }
+
+.menu {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: 'title title' 'left right' '. .';
+  grid-template-columns: repeat(2, minmax(0, 35vw));
+  grid-template-rows: 20rem 1fr 10rem;
+  justify-content: center; }
+  .menu .section__heading {
+    grid-area: title; }
+
+.menu__item {
+  display: grid;
+  grid-template-columns: 10rem 1fr min-content; }
+  .menu__item:not(:last-of-type) {
+    margin-bottom: 2rem; }
+  .menu__item-content--container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .menu__item-line {
+    align-self: center;
+    border-bottom: 2px dotted #cfcece;
+    width: 100%; }
+  .menu__item-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .menu__item-price {
+    align-self: center;
+    color: #d94545;
+    font-size: 1.8rem; }
