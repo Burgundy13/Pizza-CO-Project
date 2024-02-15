@@ -1,0 +1,72 @@
+.banner {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-rows: repeat(3, 1fr);
+	height: 100vh;
+
+	&__bg-container {
+		grid-column: 1 / 4;
+		grid-row: 1 / 4;
+	}
+
+	&__bg-img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__content {
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		justify-content: center;
+		text-align: center;
+
+		&--h1 {
+			color: $color-white;
+			font-family: 'Playfair Display', serif;
+			font-size: 4rem;
+			font-style: italic;
+		}
+
+		&--h2 {
+			color: $color-white;
+			font-size: 10rem;
+			font-weight: 600;
+			line-height: 10.8rem;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.btn {
+	background: linear-gradient(to bottom right, $color-red, $color-orange);
+	border: 0;
+	color: $color-white;
+	display: inline-block;
+	font-size: 1.6rem;
+	margin: 1.5rem 3rem;
+	padding: 1rem 4.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background: linear-gradient(
+			to bottom right,
+			$color-red-hover1,
+			$color-orange-hover2
+		);
+		box-shadow: 0 12px 24px $color-black-rgba;
+	}
+
+	&:focus {
+		background: $color-red-focus;
+		box-shadow: 0 6px 12px $color-black-rgba;
+	}
+
+	&:active {
+		background: $color-red;
+	}
+
+	&-lg {
+		font-size: 2.6rem;
+	}
+}

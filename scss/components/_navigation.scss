@@ -29,14 +29,14 @@
 	z-index: 3;
 
 	&-span {
-		background-color: $heading-color;
+		background-color: $color-white;
 		display: block;
 		height: 1.5px;
 		width: 3.5rem;
 
 		&::before,
 		&::after {
-			background-color: $heading-color;
+			background-color: $color-white;
 			content: '';
 			height: 1.5px;
 			position: absolute;
@@ -55,7 +55,7 @@
 
 .nav {
 	align-items: center;
-	background-color: $nav-bg-color;
+	background-color: $color-red;
 	display: grid;
 	height: 100vh;
 	justify-content: center;
@@ -77,10 +77,10 @@
 	}
 
 	&__link {
-		color: $heading-color;
+		color: $color-white;
 
 		&::after {
-			background-color: $heading-color;
+			background-color: $color-white;
 			bottom: -5px;
 			content: '';
 			height: 2px;

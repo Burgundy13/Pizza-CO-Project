@@ -24,7 +24,6 @@ ul {
   list-style: none; }
 
 .header {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), #fff);
   display: grid;
   grid-template-columns: 7.5rem max-content;
   left: 0;
@@ -105,3 +104,52 @@ ul {
       width: 100%; }
     .nav__link:hover::after {
       transform: translateX(0) scale(1); }
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh; }
+  .banner__bg-container {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4; }
+  .banner__bg-img {
+    height: 100%;
+    object-fit: cover; }
+  .banner__content {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-content: center;
+    text-align: center; }
+    .banner__content--h1 {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-style: italic; }
+    .banner__content--h2 {
+      color: #fff;
+      font-size: 10rem;
+      font-weight: 600;
+      line-height: 10.8rem;
+      text-transform: uppercase; }
+
+.btn {
+  background: linear-gradient(to bottom right, #d94545, #d96f45);
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 1.5rem 3rem;
+  padding: 1rem 4.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btn:hover {
+    background: linear-gradient(to bottom right, #f86d6d, #f88e6d);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); }
+  .btn:focus {
+    background: #ad3636;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); }
+  .btn:active {
+    background: #d94545; }
+  .btn-lg {
+    font-size: 2.6rem; }

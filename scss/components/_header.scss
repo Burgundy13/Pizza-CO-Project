@@ -1,9 +1,9 @@
 .header {
-	background-image: linear-gradient(
-		to bottom right,
-		$header-bg-color,
-		$heading-color
-	);
+	// background-image: linear-gradient(
+	// 	to bottom right,
+	// 	$color-black-rgba,
+	// 	$color-white
+	// );
 	display: grid;
 	grid-template-columns: 7.5rem max-content;
 	left: 0;
