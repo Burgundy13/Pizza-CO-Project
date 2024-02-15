@@ -302,3 +302,19 @@ ul {
 .img8 {
   grid-column: span 2;
   grid-row: span 2; }
+
+.subsection__partners {
+  background-image: url("../../images/img/subsection-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .subsection__partners h2 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 1.4; }
+
+.delivery__partners {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 5rem) 10rem 15rem;
+  margin-top: 2rem; }
