@@ -242,3 +242,24 @@ ul {
     align-self: center;
     color: #d94545;
     font-size: 1.8rem; }
+
+.subsection {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 30rem;
+  justify-content: center;
+  text-align: center; }
+  .subsection__reserve {
+    background-image: url("../../images/img/subsection-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .subsection h2 {
+    font-size: 4rem;
+    text-transform: uppercase; }
+  .subsection__sub-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-style: italic;
+    margin-top: 1rem;
+    text-transform: capitalize; }
