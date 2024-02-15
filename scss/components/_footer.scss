@@ -9,9 +9,11 @@
 		grid-template-columns: repeat(3, 1fr);
 		justify-content: center;
 		padding: 2rem;
+		text-align: center;
 	}
 
 	&__logo {
+		margin: 0 auto;
 		width: 7.5rem;
 	}
 
