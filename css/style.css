@@ -413,3 +413,31 @@ label {
     object-fit: cover; }
     .contact-images img:first-child {
       grid-column: span 2; }
+
+.footer-top {
+  align-items: center;
+  background-image: url("../../images/img/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding: 2rem; }
+
+.footer__logo {
+  width: 7.5rem; }
+
+.footer__link,
+.footer .social-link {
+  color: #232323;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.footer__bottom {
+  padding: 2rem;
+  text-align: center; }
+
+.fa-brands {
+  color: #232323; }
