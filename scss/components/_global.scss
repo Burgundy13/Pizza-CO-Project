@@ -13,7 +13,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 img {
@@ -22,7 +22,7 @@ img {
 }
 
 p {
-	color: $color-light-grey;
+	color: $color-grey;
 }
 
 ul {
